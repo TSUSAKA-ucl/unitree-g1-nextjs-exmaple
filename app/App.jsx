@@ -85,7 +85,7 @@ function App() {
                reflect-worker-joints
                reflect-collision="color: orange"
                reflect-joint-limits
-               set-joint-limit-keep-moving="true"
+               joint-limit-keep-moving-mask="mask: 0, 0, 0, 1, 1, 1"
                arm-motion-ui
                base-mover="velocityMax: 0.2; angularVelocityMax: 0.5"
                joint-desirable={toSchema({gain: {2:10},
@@ -103,7 +103,7 @@ function App() {
                  material="opacity: 0.5; transparent: true; side: double;"
                  robot-loader="model: g1-right"
                  ik-worker={`${0}, ${-deg22}, ${0}, ${0}, ${0}, 0, 0`}
-                 /* joint-move-to={`${0}, ${deg22}, ${0}, ${0}, ${0}, 0, 0`} */
+                 joint-move-to={`${0}, ${deg22}, ${0}, ${0}, ${0}, 0, 0`}
                  exact_solution_slrm="exact: false"
                  joint-desirable={toSchema({gain: {0:20,1:20,3:40},
                                             upper: {0:0.382,1:-0.785,3:1.396},
@@ -111,7 +111,7 @@ function App() {
                  joint-desirable-vlimit="all: 2.0"
                  reflect-collision="color: yellow"
                  ignore-collision="other:ur5e; data: 0/0, 1/0, 0/1"
-                 set-joint-limit-keep-moving="true"
+                 joint-limit-keep-moving-mask="mask: 0, 0, 0, 0, 1, 1, 1"
                  reflect-joint-limits
                  arm-motion-ui
                  set-end-effector-pose={
@@ -155,7 +155,7 @@ function App() {
                  material="opacity: 0.5; transparent: true; side: double;"
                  robot-loader="model: g1-left"
                  ik-worker={`${-deg22}, ${deg45}, ${0}, ${0}, ${0}, 0, 0`}
-                 /* joint-move-to={`${0}, ${-deg22}, ${0}, ${0}, ${0}, 0, 0`} */
+                 joint-move-to={`${0}, ${-deg22}, ${0}, ${0}, ${0}, 0, 0`}
                  exact_solution="exact: false"
                  joint-desirable={
                    toSchema({gain: {0:20,1:20,3:40},
@@ -165,7 +165,7 @@ function App() {
                  ignore-collision___a="other:g1r-unitree-r-arm; data: 0/1, 0/0, 1/0"
                  /* ignore-collision___b="other:ur5e; data: 0/0, 1/0, 0/1" */
                  reflect-collision="color: yellow"
-                 set-joint-limit-keep-moving="true"
+                 joint-limit-keep-moving-mask="mask: 0, 0, 0, 0, 1, 1, 1"
                  reflect-joint-limits
                  arm-motion-ui
                  set-end-effector-pose={`position: 0.1 0.0 0.0`}

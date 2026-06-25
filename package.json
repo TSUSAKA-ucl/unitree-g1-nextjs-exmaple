@@ -8,10 +8,10 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "@ucl-nuee/g1-left": "1.2.1",
-    "@ucl-nuee/robot-loader": "1.2.2",
-    "@ucl-nuee/ik-cd-worker": "1.0.4",
+    "@ucl-nuee/ik-cd-worker": "1.0.7",
     "@ucl-nuee/g1-right": "1.2.1",
-    "@ucl-nuee/ur5e": "1.0.4"
+    "@ucl-nuee/ur5e": "1.0.4",
+    "@ucl-nuee/robot-loader": "1.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
